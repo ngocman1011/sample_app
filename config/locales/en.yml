@@ -1,10 +1,10 @@
 en:
   base:
-    title: "| Ruby on Rails Tutorial Sample App"
+    title: "Ruby on Rails Tutorial Sample App"
     ct_href: "Ruby on Rails Tutorial"
   home:
     name: "Home"
-    h1: "Sample App"
+    app: "Sample App"
     ct_html: "This is the home page for the %{href_base} sample application."
   help:
     name: "Help"
@@ -21,3 +21,12 @@ en:
     ct2_href: "book"
     ct3_href: "screencast series"
     ct4_href: "Ruby on Rails"
+  footer:
+    news: "news"
+    ct_html: "The %{href_base} by %{href_1}."
+    ct1_href: "Michael Hartl"
+  user:
+    login: "Login"
+    signup: "Sign up"
+    button: "Sign up now !"
+    content: "This will be a signup page for new users."
