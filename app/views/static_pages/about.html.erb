@@ -1,0 +1,13 @@
+<% provide(:title, t("about.name")) %>
+<% provide(:base_title, t("base.title")) %>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1><%= t "about.name" %></h1>
+  <p>
+    <%= t("about.ct_html", href_base: link_to(t("base.ct_href"), "https://www.railstutorial.org/"), href_1: link_to(t("about.ct1_href"), "https://www.learnenough.com/"), href_2: link_to(t("about.ct2_href"), "https://www.railstutorial.org/book"), href_3: link_to(t("about.ct3_href"), "https://screencasts.railstutorial.org/"), href_4: link_to(t("about.ct4_href"), "https://rubyonrails.org/")) %>
+  </p>
+</body>
+</html>

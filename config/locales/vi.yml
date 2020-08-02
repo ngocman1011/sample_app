@@ -1,3 +1,23 @@
 vi:
-  index:
-    title: "Ứng dụng mẫu"
+  base:
+    title: "| Ruby on Rails Tutorial Ứng dụng mẫu"
+    ct_href: "Hướng dẫn Ruby on Rails"
+  home:
+    name: "Trang chủ"
+    h1: "Ứng dụng mẫu"
+    ct_html: "Đây là trang chủ cho %{href_base} ứng dụng mẫu."
+  help:
+    name: "Hỗ trợ"
+    ct_html: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại %{href_1}. Để nhận trợ giúp về ứng dụng mẫu này, hãy xem %{href_base}."
+    ct1_href: "trang hỗ trợ hướng dẫn Rails"
+  contact:
+    name: "Liên hệ"
+    ct_html: "Liên hệ với Hướng dẫn Ruby on Rails về ứng dụng mẫu tại %{href_1}."
+    ct1_href: "trang liên hệ"
+  about:
+    name: "Thông tin khác"
+    ct_html: "Các %{href_base}, một phần của %{href_1} bộ hướng dẫn, là một %{href_2} và %{href_3} để dạy phát triển web với %{href_4}. Đây là hướng dẫn cho ứng dụng mẫu."
+    ct1_href: "Learn Enough"
+    ct2_href: "quyển sách"
+    ct3_href: "là một loạt các thao tác"
+    ct4_href: "Ruby on Rails"

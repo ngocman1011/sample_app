@@ -1,0 +1,13 @@
+<% provide(:title, t("help.name")) %>
+<% provide(:base_title, t("base.title")) %>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1><%= t "help.name" %></h1>
+  <p>
+    <%= t("help.ct_html", href_1: link_to(t("help.ct1_href"), "https://www.railstutorial.org/help"), href_base: link_to(t("base.ct_href"), "https://www.railstutorial.org/")) %>
+  </p>
+</body>
+</html>

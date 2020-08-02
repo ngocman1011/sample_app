@@ -1,6 +1,23 @@
 en:
-  hello: "Hello world"
-  index:
-    title: "Sample App"
-  en: "English"
-  vi: "Vietnamese"
+  base:
+    title: "| Ruby on Rails Tutorial Sample App"
+    ct_href: "Ruby on Rails Tutorial"
+  home:
+    name: "Home"
+    h1: "Sample App"
+    ct_html: "This is the home page for the %{href_base} sample application."
+  help:
+    name: "Help"
+    ct_html: "Get help on the Ruby on Rails Tutorial at the %{href_1}. To get help on this sample app, see the %{href_base}."
+    ct1_href: "Rails Tutorial Help page"
+  contact:
+    name: "Contact"
+    ct_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href_1}."
+    ct1_href: "contact page"
+  about:
+    name: "About"
+    ct_html: "The %{href_base}, part of the %{href_1} family of tutorials, is a %{href_2} and %{href_3} to teach web development with %{href_4}. This is the sample app for the tutorial."
+    ct1_href: "Learn Enough"
+    ct2_href: "book"
+    ct3_href: "screencast series"
+    ct4_href: "Ruby on Rails"

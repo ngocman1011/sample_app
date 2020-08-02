@@ -1,0 +1,13 @@
+<% provide(:title, t("contact.name")) %>
+<% provide(:base_title, t("base.title")) %>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1><%= t "contact.name" %></h1>
+  <p>
+    <%= t("contact.ct_html", href_1: link_to(t("contact.ct1_href"), "https://www.railstutorial.org/contact")) %>
+  </p>
+</body>
+</html>
