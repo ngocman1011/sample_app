@@ -1,0 +1,13 @@
+<% provide(:title, t("home.name")) %>
+<% provide(:base_title, t("base.title")) %>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1><%= t "home.name" %></h1>
+  <p>
+    <%= t("home.ct_html", href_base: link_to(t("base.ct_href"), "https://www.railstutorial.org/")) %>
+  </p>
+</body>
+</html>
