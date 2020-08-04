@@ -1,0 +1,12 @@
+<footer class="footer">
+  <small>
+    <%= t("footer.ct_html", href_base: link_to(t("base.ct_href"), "https://www.railstutorial.org/"), href_1: link_to(t("footer.ct1_href"), "https://www.michaelhartl.com/")) %>
+ </small>
+ <nav>
+  <ul>
+    <li><%= link_to t("about.name"), about_path %></li>
+    <li><%= link_to t("contact.name"), contact_path %></li>
+    <li><%= link_to t("footer.news"), "https://news.railstutorial.org/" %></li>
+  </ul>
+</nav>
+</footer>

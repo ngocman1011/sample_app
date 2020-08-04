@@ -1,10 +1,10 @@
 vi:
   base:
-    title: "| Ruby on Rails Tutorial Ứng dụng mẫu"
+    title: "Hướng dẫn Ruby on Rails - Ứng dụng mẫu"
     ct_href: "Hướng dẫn Ruby on Rails"
   home:
     name: "Trang chủ"
-    h1: "Ứng dụng mẫu"
+    app: "Ứng dụng mẫu"
     ct_html: "Đây là trang chủ cho %{href_base} ứng dụng mẫu."
   help:
     name: "Hỗ trợ"
@@ -21,3 +21,12 @@ vi:
     ct2_href: "quyển sách"
     ct3_href: "là một loạt các thao tác"
     ct4_href: "Ruby on Rails"
+  footer:
+    news: "Tin tức"
+    ct_html: "Các %{href_base} bởi %{href_1}."
+    ct1_href: "Michael Hartl"
+  user:
+    login: "Đăng nhập"
+    signup: "Đăng ký"
+    button: "Đăng ký ngay !"
+    content: "Đây sẽ là một trang đăng ký cho người dùng mới."
