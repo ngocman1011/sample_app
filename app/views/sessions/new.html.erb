@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, t("user.login")) %>
+  <% provide(:base_title, t("base.title")) %>
+</head>
+<body>
+  <h1><%= t "user.login" %></h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(:session, url: login_path) do |f| %>
+        <%= f.label :email, t("user.email")%>
+        <%= f.email_field :email, class: "form-control" %>
+        <%= f.label :password, t("user.pass") %>
+        <%= f.password_field :password, class: "form-control" %>
+        <%= f.submit t("user.login"), class: "btn btn-primary" %>
+      <% end %>
+      <p><%= t("user.newu") %><%= link_to t("user.button"), signup_path %></p>
+    </div>
+  </div>
+</body>
+</html>

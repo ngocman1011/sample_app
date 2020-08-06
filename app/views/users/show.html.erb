@@ -9,7 +9,6 @@
   <aside class="col-md-4">
     <section class="user_info">
       <% if @user.name.blank? %>
-      <div class="alert alert-danger"><%= t("user.notfound") %></div>
       <% else %>
       <h1>
         <%= gravatar_for @user %>
