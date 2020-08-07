@@ -1,12 +1,31 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to t("home.app"), root_path, id: "logo" %>
-    <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to t("home.name"), root_path %></li>
-      <li><%= link_to t("help.name"), helf_path %></li>
-      <li><%= link_to t("user.login"), signup_path %></li>
-      <li><%= link_to t("en"), locale: :en %></li>
-      <li><%= link_to t("vi"), locale: :vi %></li>
-    </ul>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("home.name"), root_path %></li>
+        <li><%= link_to t("help.name"), helf_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to t("user.users"), "#" %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <%= t("user.account") %><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("user.profile"), current_user %></li>
+              <li><%= link_to t("user.settings"), "#" %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t("user.logout"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("user.login"), login_path %></li>
+        <% end %>
+        <li><%= link_to t("en"), locale: :en %></li>
+        <li><%= link_to t("vi"), locale: :vi %></li>
+      </ul>
+    </nav>
   </div>
 </header>

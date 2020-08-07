@@ -27,6 +27,7 @@ en:
     ct1_href: "Michael Hartl"
   user:
     login: "Login"
+    logout: "Log out"
     signup: "Sign up"
     button: "Sign up now !"
     content: "This will be a signup page for new users."
@@ -39,5 +40,10 @@ en:
     form_error: "The form contains"
     error: "error"
     success: "Welcome to the Sample App!"
-    notfound: "Not found this user!"
-
+    newu: "New user? "
+    account: "Account"
+    profile: "Profile"
+    settings: "Settings"
+    users: "Users"
+    fail: "Email/password not valid!"
+    notfound: "Not found this user"

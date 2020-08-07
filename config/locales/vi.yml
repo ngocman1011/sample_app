@@ -27,6 +27,7 @@ vi:
     ct1_href: "Michael Hartl"
   user:
     login: "Đăng nhập"
+    logout: "Đăng xuất"
     signup: "Đăng ký"
     button: "Đăng ký ngay !"
     content: "Đây sẽ là một trang đăng ký cho người dùng mới."
@@ -39,4 +40,10 @@ vi:
     form_error: "Biểu mẫu có"
     error: "lỗi"
     success: "Chào mừng đến với Ứng dụng mẫu!"
+    newu: "Người dùng mới? "
+    account: "Tài khoản"
+    profile: "Hồ sơ"
+    settings: "Cài đặt"
+    users: "Người dùng"
+    fail: "Email/mật khẩu không hợp lệ!"
     notfound: "Không tìm thấy người dùng!"
