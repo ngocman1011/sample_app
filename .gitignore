@@ -41,6 +41,7 @@ yarn-debug.log*
 .yarn-integrity
 
 config/database.yml
+config/application.yml
 
 config/settings.local.yml
 config/settings/*.local.yml
