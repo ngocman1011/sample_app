@@ -47,3 +47,4 @@ en:
     users: "Users"
     fail: "Email/password not valid!"
     notfound: "Not found this user"
+    remember: "Remember me on this computer"

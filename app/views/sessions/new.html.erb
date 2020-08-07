@@ -13,6 +13,10 @@
         <%= f.email_field :email, class: "form-control" %>
         <%= f.label :password, t("user.pass") %>
         <%= f.password_field :password, class: "form-control" %>
+        <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+          <span><%= t "user.remember" %></span>
+        <% end %>
         <%= f.submit t("user.login"), class: "btn btn-primary" %>
       <% end %>
       <p><%= t("user.newu") %><%= link_to t("user.button"), signup_path %></p>
