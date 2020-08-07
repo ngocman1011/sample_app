@@ -57,3 +57,11 @@ en:
     delete: "delete"
     delete_verify: "Are you sure?"
     delete_fail: "User has not been deleted"
+  email:
+    check: "Please check your email to activate your account."
+    subject: "Account activation"
+    hi: "Hi"
+    click: "Click on the link below to activate your account:"
+    success: "Account activated!"
+    fail: "Invalid activation link"
+    acc_not_activated: "Account not activated. "

@@ -1,7 +1,7 @@
-  <li>
-    <%= gravatar_for user, size: 50 %>
-    <%= link_to user.name, user %>
-    <% if check_user?(user) %>
-      <%= link_to t("user.delete"), user, method: :delete, data: {confirm: t("user.delete_verify")} %>
-    <% end %>
-  </li>
+<li>
+  <%= gravatar_for user, size: 50 %>
+  <%= link_to user.name, user %>
+  <% if check_user?(user) %>
+    <%= link_to t("user.delete"), user, method: :delete, data: {confirm: t("user.delete_verify")} %>
+  <% end %>
+</li>
