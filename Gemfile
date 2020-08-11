@@ -38,5 +38,8 @@ group :development, :test do
 end
 
 gem "bcrypt", "3.1.13"
+gem "bootstrap-will_paginate"
 gem "config"
+gem "faker"
 gem "rails-i18n"
+gem "will_paginate"

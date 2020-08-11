@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, t("user.all_users"))%>
+  <% provide(:base_title, t("base.title")) %>
+</head>
+<body>
+  <h1><%= t("user.all_users") %></h1>
+  <%= will_paginate %>
+  <ul class="users">
+    <%= render @users %>
+  </ul>
+  <%= will_paginate %>
+</body>
+</html>
