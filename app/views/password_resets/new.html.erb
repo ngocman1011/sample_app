@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% provide(:title, t("reset.forgot")) %>
+  <% provide(:base_title, t("base.title")) %>
+</head>
+<body>
+  <h1><%= t "reset.forgot" %></h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for :password_reset, url: password_resets_path do |f| %>
+        <%= f.label :email, t("user.email") %>
+        <%= f.email_field :email, class: "form-control" %>
+        <%= f.submit t("reset.submit"), class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</body>
+</html>
