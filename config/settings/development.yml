@@ -4,3 +4,5 @@ validation:
   pass_min: 6
 helpers:
   size: 80
+mail:
+  expired: 2
