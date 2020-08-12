@@ -1,6 +1,9 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
+
   attr_accessor :remember_token, :activation_token, :reset_token
+
+  has_many :microposts, dependent: :destroy
 
   validates :name, presence: true,
     length: {maximum: Settings.validation.name_max}
@@ -9,6 +12,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: true}
   validates :password, presence: true,
     length: {minimum: Settings.validation.pass_min}, allow_nil: true
+
   has_secure_password
 
   before_save :downcase_email
@@ -46,7 +50,7 @@ class User < ApplicationRecord
   end
 
   def activate
-    update_columns(activated: true, activated_at: Time.zone.now)
+    update_columns activated: true, activated_at: Time.zone.now
   end
 
   def send_activation_email
@@ -65,6 +69,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.mail.expired.hours.ago
+  end
+
+  def feed
+    microposts.recent_posts
   end
 
   private

@@ -5,12 +5,29 @@
   <% provide(:base_title, t("base.title")) %>
 </head>
 <body>
-  <div class="center jumbotron">
-    <h1><%= t "home.name" %></h1>
-    <h2>
-      <%= t("home.ct_html", href_base: link_to(t("base.ct_href"), "https://www.railstutorial.org/")) %>
-    </h2>
-    <%= link_to t("user.button"), signup_path, class: "btn btn-lg btn-primary" %>
-  </div>
+  <% if logged_in? %>
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="user_info">
+          <%= render "shared/user_info" %>
+        </section>
+        <section class="micropost_form">
+          <%= render "shared/micropost_form" %>
+        </section>
+      </aside>
+      <div class="col-md-8">
+        <h3><%= t "microposts.feed" %></h3>
+        <%= render "shared/feed" %>
+      </div>
+    </div>
+  <% else %>
+    <div class="center jumbotron">
+      <h1><%= t "home.name" %></h1>
+      <h2>
+        <%= t("home.ct_html", href_base: link_to(t("base.ct_href"), "https://www.railstutorial.org/")) %>
+      </h2>
+      <%= link_to t("user.button"), signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
+  <% end %>
 </body>
 </html>

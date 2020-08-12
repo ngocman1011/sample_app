@@ -1,4 +1,7 @@
 en:
+  time:
+    formats:
+      short: "%H:%M:%S %a, %d %b %Y"
   base:
     title: "Ruby on Rails Tutorial Sample App"
     ct_href: "Ruby on Rails Tutorial"
@@ -77,3 +80,17 @@ en:
     expired: "Password reset has expired."
     success: "Password has been reset."
     empty: "can't be empty"
+  microposts:
+    name: "Microposts"
+    posted: "Posted "
+    ago: "ago."
+    created: "Micropost created!"
+    view_user: "view my profile"
+    post: "Post"
+    new: "Compose new micropost..."
+    feed: "Micropost Feed"
+    deleted: "Micropost deleted"
+    delete_fail: "Micropost has not been deleted"
+    image_type: "must be a valid image format"
+    image_size: "Image should be less than 5MB"
+    access_error: "Access error"
