@@ -3,7 +3,9 @@ class UsersController < ApplicationController
   before_action :load_user, except: [:index, :new, :create]
   before_action :correct_user, only: [:edit, :update]
 
-  def show; end
+  def show
+    @microposts = @user.microposts.recent_posts.paginate page: params[:page]
+  end
 
   def new
     @user = User.new
@@ -23,7 +25,7 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if @user.update(user_params)
+    if @user.update user_params
       flash[:success] = t "user.edit_success"
       redirect_to @user
     else
@@ -37,9 +39,9 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy
-      flash[:success] = t("user.delete_user")
+      flash[:success] = t "user.delete_user"
     else
-      flash[:danger] = t("user.delete_fail")
+      flash[:danger] = t "user.delete_fail"
     end
     redirect_to users_path
   end

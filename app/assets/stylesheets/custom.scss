@@ -1,6 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$h2-footer-color: #777;
+$logo-color: #fff;
+$footer-gray: #eaeaea;
+$li-color: #e8e8e8;
+$input-color: #bbb;
+$footer-a: #555;
+$footer-a-hover: #222;
+
 /* universal */
 body {
   padding-top: 60px;
@@ -34,7 +42,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $h2-footer-color;
 }
 p {
   font-size: 1.1em;
@@ -46,14 +54,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: $logo-color;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
 }
 #logo:hover {
-  color: #fff;
+  color: $logo-color;
   text-decoration: none;
 }
 
@@ -61,14 +69,14 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $footer-gray;
+  color: $h2-footer-color;
 }
 footer a {
-  color: #555;
+  color: $footer-a;
 }
 footer a:hover {
-  color: #222;
+  color: $footer-a-hover;
 }
 footer small {
   float: left;
@@ -83,7 +91,7 @@ footer ul li {
 }
 
 /* mixins, variables, etc. */
-$gray-medium-light: #eaeaea;
+$gray-medium-light: $footer-gray;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -136,7 +144,7 @@ aside {
 
 /* forms */
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid $input-color;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
@@ -180,5 +188,51 @@ input {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+/* microposts */
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $li-color;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
   }
 }

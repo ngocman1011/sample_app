@@ -1,4 +1,7 @@
 vi:
+  time:
+    formats:
+      short: "%H:%M:%S %a, %d %b %Y"
   base:
     title: "Hướng dẫn Ruby on Rails - Ứng dụng mẫu"
     ct_href: "Hướng dẫn Ruby on Rails"
@@ -77,3 +80,17 @@ vi:
     expired: "Đặt lại mật khẩu đã hết hạn"
     success: "Mật khẩu đã được đặt lại"
     empty: "không được để trống"
+  microposts:
+    name: "Bài viết"
+    posted: "Đã đăng "
+    ago: "trước."
+    created: "Bài viết đã được tạo!"
+    view_user: "xem thông tin"
+    post: "Đăng"
+    new: "Tạo bài viết mới..."
+    feed: "Dữ liệu bài đăng"
+    deleted: "Đã xóa bài viết"
+    delete_fail: "Bài đăng chưa được xóa"
+    image_type: "định dạng ảnh phải hợp lệ"
+    image_size: "File ảnh chỉ hỗ trợ dưới 5MB"
+    access_error: "Lỗi truy cập"

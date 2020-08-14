@@ -14,5 +14,9 @@ module SampleApp
     config.i18n.available_locales = [:en, :vi]
 
     config.i18n.default_locale = :vi
+
+    config.active_record.default_timezone = :local
+
+    config.time_zone = "Hanoi"
   end
 end
