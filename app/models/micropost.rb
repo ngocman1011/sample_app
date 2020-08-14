@@ -1,8 +1,10 @@
 class Micropost < ApplicationRecord
   belongs_to :user
   delegate :name, to: :user
-  #default_scope ->{order created_at: :desc}
+  # default_scope ->{order created_at: :desc}
   scope :recent_posts, ->{order created_at: :desc}
+  scope :microposts_with_ids, -> ids{where(user_id: ids)}
+
   has_one_attached :image
   validates :content, presence: true,
     length: {maximum: Settings.validation.content_max}

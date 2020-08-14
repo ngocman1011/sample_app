@@ -94,3 +94,12 @@ en:
     image_type: "must be a valid image format"
     image_size: "Image should be less than 5MB"
     access_error: "Access error"
+  follow:
+    following: "Following"
+    followers: "Followers"
+    name: "Follow"
+    unfollow: "Unfollow"
+    not_found_relationship: "Not found relationship"
+
+
+
