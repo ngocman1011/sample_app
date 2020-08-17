@@ -94,3 +94,9 @@ vi:
     image_type: "định dạng ảnh phải hợp lệ"
     image_size: "File ảnh chỉ hỗ trợ dưới 5MB"
     access_error: "Lỗi truy cập"
+  follow:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+    name: "Theo dõi"
+    unfollow: "Hủy theo dõi"
+    not_found_relationship: "Không tìm thấy quan hệ"

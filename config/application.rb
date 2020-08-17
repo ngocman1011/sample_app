@@ -18,5 +18,7 @@ module SampleApp
     config.active_record.default_timezone = :local
 
     config.time_zone = "Hanoi"
+
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
